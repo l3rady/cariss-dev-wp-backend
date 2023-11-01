@@ -27,7 +27,8 @@
     "wpackagist-plugin/wp-graphql": ">=1.17",
     "wpackagist-plugin/wp-gatsby": ">=2.3",
     "wp-graphql/wp-graphql-acf": ">=0.6.1",
-    "wpackagist-plugin/custom-post-type-ui": ">=1.14"
+    "wpackagist-plugin/custom-post-type-ui": ">=1.14",
+    "wpackagist-theme/twentytwentythree": "^1.2"
   },
   "extra": {
     "wordpress-install-dir": "web/wp",
