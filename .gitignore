@@ -1,0 +1,20 @@
+/.env
+/vendor/
+/web/wp/
+
+# Plugins
+/web/app/plugins/*
+!/web/app/plugins/.gitkeep
+
+# MU Plugins
+/web/app/mu-plugins/*
+!/web/app/mu-plugins/.gitkeep
+!/web/app/mu-plugins/bedrock-autoloader.php
+
+# Themes
+/web/app/themes/*
+!/web/app/themes/.gitkeep
+
+# Uploads
+/web/app/uploads/*
+!/web/app/uploads/.gitkeep
