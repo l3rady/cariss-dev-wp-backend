@@ -44,6 +44,8 @@ define('WPLANG', env('WPLANG', 'en_GB'));
 
 define('DISABLE_WP_CRON', env('DISABLE_WP_CRON', false));
 
+define( 'WP2FA_ENCRYPT_KEY', env('WP2FA_ENCRYPT_KEY', false));
+
 if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
     $_SERVER['HTTPS'] = 'on';
 }
