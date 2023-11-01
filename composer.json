@@ -1,48 +1,56 @@
 {
-    "name": "l3rady/cariss-dev-wp-backend",
-    "description": "cariss.dev WP Backend",
-    "type": "project",
-    "authors": [
-      {
-        "name": "Scott Cariss",
-        "email": "scott@cariss.dev"
-      }
-    ],
-    "repositories": [
-      {
-        "type": "composer",
-        "url": "https://wpackagist.org"
-      }
-    ],
-    "require": {
-      "johnpbloch/wordpress": ">=6.3.2",
-      "mykehowells/dotenv": ">=1.0",
-      "wpackagist-plugin/wp-2fa": ">=2.5",
-      "wpackagist-plugin/limit-login-attempts-reloaded": ">=2.25.25"
+  "name": "l3rady/cariss-dev-wp-backend",
+  "description": "cariss.dev WP Backend",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Scott Cariss",
+      "email": "scott@cariss.dev"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
     },
-    "extra": {
-      "wordpress-install-dir": "web/wp",
-      "installer-paths": {
-        "web/app/plugins/{$name}/": [
-          "type:wordpress-plugin"
-        ],
-        "web/app/mu-plugins/{$name}/": [
-          "type:wordpress-muplugin"
-        ],
-        "web/app/themes/{$name}/": [
-          "type:wordpress-theme"
-        ]
-      }
-    },
-    "require-dev": {
-      "larapack/dd": ">=1.1",
-      "wpackagist-plugin/monkeyman-rewrite-analyzer": ">=1.0"
-    },
-    "config": {
-      "allow-plugins": {
-        "composer/installers": true,
-        "johnpbloch/wordpress-core-installer": true
-      }
+    {
+      "type": "composer",
+      "url": "https://connect.advancedcustomfields.com"
+    }
+  ],
+  "require": {
+    "johnpbloch/wordpress": ">=6.3.2",
+    "mykehowells/dotenv": ">=1.0",
+    "wpackagist-plugin/wp-2fa": ">=2.5",
+    "wpackagist-plugin/limit-login-attempts-reloaded": ">=2.25.25",
+    "wpengine/advanced-custom-fields-pro": ">=6.2",
+    "wpackagist-plugin/wp-graphql": ">=1.17",
+    "wpackagist-plugin/wp-gatsby": ">=2.3",
+    "wp-graphql/wp-graphql-acf": ">=0.6.1",
+    "wpackagist-plugin/custom-post-type-ui": ">=1.14"
+  },
+  "extra": {
+    "wordpress-install-dir": "web/wp",
+    "installer-paths": {
+      "web/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "web/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  },
+  "require-dev": {
+    "larapack/dd": ">=1.1",
+    "wpackagist-plugin/monkeyman-rewrite-analyzer": ">=1.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "johnpbloch/wordpress-core-installer": true
     }
   }
-  
+}
